@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"c:\\\\Users\\\\yasmi\\\\Dev\\\\wealthtrack-api\")",
+      "Bash(export JAVA_HOME=\"/c/Program Files/Eclipse Adoptium/jdk-17.0.19.10-hotspot\")",
+      "Bash(./gradlew.bat compileJava -q)",
+      "Bash(./gradlew.bat compileJava)",
+      "Bash(./gradlew.bat bootRun)",
+      "Bash(curl.exe -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8080/swagger-ui/index.html)",
+      "Bash(curl.exe -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8080/v3/api-docs)",
+      "Bash(curl.exe -s -X POST http://localhost:8080/api/v1/accounts -H \"Content-Type: application/json\" -d \"{\\\\\"name\\\\\":\\\\\"My 401k\\\\\",\\\\\"ownerName\\\\\":\\\\\"Jane Doe\\\\\",\\\\\"ownerAge\\\\\":40,\\\\\"type\\\\\":\\\\\"RETIREMENT\\\\\",\\\\\"initialBalance\\\\\":1000.00}\")",
+      "Bash(curl.exe -s -X POST http://localhost:8080/api/v1/accounts/1/contributions -H \"Content-Type: application/json\" -d \"{\\\\\"amount\\\\\":500.00,\\\\\"description\\\\\":\\\\\"March\\\\\"}\")",
+      "Bash(curl.exe -s http://localhost:8080/api/v1/accounts/1/balance)",
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\yasmi\\\\Dev\\\\wealthtrack-api\" -Recurse -Filter \"*.java\")",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(Sort-Object)",
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\yasmi\\\\Dev\\\\wealthtrack-api\" -Name)"
+    ]
+  }
+}
